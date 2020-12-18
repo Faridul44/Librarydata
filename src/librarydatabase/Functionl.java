@@ -9,7 +9,7 @@ public class Functionl {
        static Connection getInstance()throws SQLException, ClassNotFoundException{
           if(connection==null){
               Class.forName("com.mysql.jdbc.Driver");
-          connection = DriverManager.getConnection("jdbc:mysql://localhost/Library_fun?" +"user=root");
+          connection = DriverManager.getConnection("jdbc:mysql://localhost/library_inf?" +"user=root");
           }
            return connection;
       }

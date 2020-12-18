@@ -21,7 +21,7 @@ try {
             sc = new Scanner(System.in);
             // statement=connect.createStatement();
             //result=statement.executeQuery("SELECT * FROM  Library_inform");
-            preparedStatement = connect.prepareStatement("SELECT * FROM Library_inform WHERE rack=?");
+            preparedStatement = connect.prepareStatement("SELECT * FROM library_inf WHERE rack=?");
             while (true) {
                 System.out.println("Insert a rack\n");
                 preparedStatement.setString(1, sc.nextLine());
@@ -35,7 +35,7 @@ try {
                     System.out.println("Rack:" + result.getString("rack")); 
               }
        }
-} catch(Exception ex){
+}   catch(Exception ex){
            System.out.println(""+ex);
     }
             

@@ -1,2 +1,0 @@
-# Librarydatabase
- SQL+JAVA
